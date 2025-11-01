@@ -1,0 +1,100 @@
+{
+    "categorias": {
+        "Atividade e Volume": [
+            {
+                "id": "most_actives",
+                "label": "Mais Ativas (Global)",
+                "paises": [
+                    "United States",
+                    "Brazil",
+                    "Canada"
+                ]
+            },
+            {
+                "id": "most_actives_br",
+                "label": "Mais Ativas (Brasil)",
+                "paises": [
+                    "Brazil"
+                ]
+            },
+            {
+                "id": "most_actives_europe",
+                "label": "Mais Ativas (Europa)",
+                "paises": [
+                    "Germany",
+                    "France",
+                    "United Kingdom"
+                ]
+            }
+        ],
+        "Desempenho Diário": [
+            {
+                "id": "day_gainers",
+                "label": "Maiores Altas Hoje (Global)",
+                "paises": [
+                    "United States",
+                    "Brazil"
+                ]
+            },
+            {
+                "id": "day_gainers_br",
+                "label": "Maiores Altas (Brasil)",
+                "paises": [
+                    "Brazil"
+                ]
+            },
+            {
+                "id": "day_losers",
+                "label": "Maiores Quedas Hoje (Global)",
+                "paises": [
+                    "United States",
+                    "Brazil"
+                ]
+            }
+        ],
+        "Small Caps e Crescimento": [
+            {
+                "id": "aggressive_small_caps",
+                "label": "Small Caps Agressivas",
+                "paises": [
+                    "United States"
+                ]
+            },
+            {
+                "id": "small_cap_gainers",
+                "label": "Small Caps em Alta",
+                "paises": [
+                    "United States"
+                ]
+            }
+        ],
+        "Subvalorizadas": [
+            {
+                "id": "undervalued_growth_stocks",
+                "label": "Crescimento Subvalorizado",
+                "paises": [
+                    "United States"
+                ]
+            },
+            {
+                "id": "undervalued_large_caps",
+                "label": "Large Caps Subvalorizadas",
+                "paises": [
+                    "United States"
+                ]
+            }
+        ]
+    },
+    "todos_ids": [
+        "most_actives",
+        "most_actives_br",
+        "most_actives_europe",
+        "day_gainers",
+        "day_gainers_br",
+        "day_losers",
+        "aggressive_small_caps",
+        "small_cap_gainers",
+        "undervalued_growth_stocks",
+        "undervalued_large_caps"
+    ]
+}
