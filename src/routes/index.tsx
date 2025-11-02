@@ -5,6 +5,7 @@ import AnalysisPage from '../pages/analysis';
 import FindActions from '../pages/find-actions';
 import VerifySale from '../pages/verify-sale';
 import ActionsCRUD from '../pages/actions';
+import Wallet from '../pages/wallet';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path="/find-actions" element={<FindActions />} />
             <Route path="/verify-sales" element={<VerifySale />} />
             <Route path="/register-action" element={<ActionsCRUD />} />
+            <Route path="/wallet" element={<Wallet />} />
             <Route path="*" element={<HomePage />} />
         </Routes>
     );

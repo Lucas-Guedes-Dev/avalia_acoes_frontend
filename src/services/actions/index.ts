@@ -1,5 +1,5 @@
 import api from "../api";
-import { type ActionUpdate, type ActionResponse, type ActionCreate } from "./types";
+import { type ActionUpdate, type ActionResponse, type ActionCreate, type WalletType } from "./types";
 
 class ActionService {
     constructor() { }
@@ -25,6 +25,11 @@ class ActionService {
 
     async delete(id: number): Promise<boolean> {
         const response = await api.delete<boolean>(`/actions/${id}`);
+        return response.data;
+    }
+
+    async getWallet(): Promise<WalletType[]> {
+        const response = await api.get<WalletType[]>(`/actions/wallet`);
         return response.data;
     }
 }

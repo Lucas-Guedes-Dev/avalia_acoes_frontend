@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "styled-components";
 import { Button, ButtonGroup, ButtonRow, Card, CardActions, CardHeader, CardsGrid, Container, EmptyState, Form, FormGroup, IconButton, Input, Label, Loader, MetricsGrid, Modal, ModalContent, ModalHeader, PageTitle, Subtitle } from "./style";
-import { Edit2, Plus, Trash2, TrendingUp } from "lucide-react";
+import { ArrowLeft, Edit2, Plus, Trash2, TrendingUp } from "lucide-react";
 import ActionService from "../../services/actions";
 import type { ActionResponse, ActionUpdate } from "../../services/actions/types";
+import { BackButton } from "../../globalStyles";
+import { useNavigate } from "react-router-dom";
 
 const ActionsCRUD: React.FC = () => {
     const service = new ActionService();
@@ -17,6 +19,7 @@ const ActionsCRUD: React.FC = () => {
         value: '',
         ammount: ''
     });
+    const navigate = useNavigate()
     const theme = useTheme();
 
     const gradients = [
@@ -111,6 +114,9 @@ const ActionsCRUD: React.FC = () => {
 
     return (
         <Container>
+            <BackButton onClick={() => navigate('/home')}>
+                <ArrowLeft size={16} /> Voltar
+            </BackButton>
             <PageTitle>Minhas Ações</PageTitle>
             <Subtitle>Gerencie seu portfólio de investimentos</Subtitle>
 

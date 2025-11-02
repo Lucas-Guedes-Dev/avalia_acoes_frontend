@@ -74,7 +74,7 @@ const AnalysisPage: React.FC = () => {
                 <div className="company">{result.empresa}</div>
                 <div className="sector">{result.setor}</div>
               </div>
-              <div className="price">R$ {result.preco_atual ? result.preco_atual.toFixed(2) : 'Sem valor'}</div>
+              <div className="price">R$ {result.preco_atual ? result.preco_atual.preco_brl.toFixed(2) : 'Sem valor'}</div>
             </CardHeader>
 
             <MetricsGrid>

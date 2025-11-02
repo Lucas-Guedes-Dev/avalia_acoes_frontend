@@ -47,6 +47,15 @@ const HomePage: React.FC = () => {
                     <h3>Registrar ações compradas</h3>
                     <p>Avalie suas ações</p>
                 </HomeButton>
+
+                <HomeButton
+                    onClick={() => navigate('/wallet')}
+                    gradient={theme.gradients.card4}
+                >
+                    <ShoppingCart />
+                    <h3>Verificar minha carteira</h3>
+                    <p>Avaliar minha carteira</p>
+                </HomeButton>
             </ButtonGrid>
         </Container>
     )

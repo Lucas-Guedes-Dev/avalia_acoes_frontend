@@ -22,6 +22,7 @@ const theme = {
         card1: 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
         card2: 'linear-gradient(135deg, #f093fb 0%, #f5576c 100%)',
         card3: 'linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)',
+        card4: 'linear-gradient(135deg, #9b290d 0%, #ee471e 100%)',
     },
 };
 
