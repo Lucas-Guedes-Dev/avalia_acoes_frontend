@@ -62,7 +62,11 @@ const WalletPage: React.FC = () => {
             <PageTitle>💼 Verificar minha carteira</PageTitle>
             <Subtitle>Analisar minha carteira</Subtitle>
 
-            {loading && <LoaderSpinner />}
+            {loading && (
+                <LoaderSpinner>
+                    <div className="spinner" />
+                </LoaderSpinner>
+            )}
             <WalletGrid>
                 {result && (
 
@@ -86,11 +90,20 @@ const WalletPage: React.FC = () => {
                             <MetricsGrid style={{ marginTop: '1.5rem' }}>
                                 <div className="metric">
                                     <div className="label">Preço Atual</div>
-                                    <div className="value">R$ {value.valor_atual ? value.valor_atual.toFixed(2) : 'Sem valor'}</div>
+                                    <div className="value">R$ {value.detalhes && value.detalhes.preco_atual_brl ? value.detalhes.preco_atual_brl.toFixed(2) : 'Sem valor'}</div>
                                 </div>
                                 <div className="metric">
                                     <div className="label">RSI</div>
                                     <div className="value">{value.detalhes && value.detalhes.rsi ? value.detalhes.rsi.toFixed(1) : 'Sem valor'}</div>
+                                </div>
+
+                                <div className="metric">
+                                    <div className="label">Valor Investido</div>
+                                    <div className="value">{value.valor_investido ? value.valor_investido.toFixed(1) : 'Sem valor'}</div>
+                                </div>
+                                <div className="metric">
+                                    <div className="label">Valor Atual</div>
+                                    <div className="value">{value.valor_atual ? value.valor_atual.toFixed(1) : 'Sem valor'}</div>
                                 </div>
                                 <div className="metric" style={{ gridColumn: '1 / -1' }}>
                                     <div className="label">Variação (5 dias)</div>
