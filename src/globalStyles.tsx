@@ -68,6 +68,7 @@ export const HomeButton = styled.button<{ gradient: string }>`
   cursor: pointer;
   transition: all 0.3s ease;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
   
   &:hover {
     transform: translateY(-5px) scale(1.02);

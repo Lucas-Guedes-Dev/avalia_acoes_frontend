@@ -1,6 +1,6 @@
 import { useTheme } from "styled-components";
 import { ButtonGrid, Container, HomeButton, PageTitle, Subtitle } from "../../globalStyles";
-import { TrendingUp, DollarSign, AlertTriangle } from 'lucide-react';
+import { TrendingUp, DollarSign, AlertTriangle, ShoppingCart } from 'lucide-react';
 import { useNavigate } from "react-router-dom";
 
 const HomePage: React.FC = () => {
@@ -37,6 +37,15 @@ const HomePage: React.FC = () => {
                     <AlertTriangle />
                     <h3>Verificar Venda</h3>
                     <p>Avalie se é hora de vender</p>
+                </HomeButton>
+
+                <HomeButton
+                    onClick={() => navigate('/register-action')}
+                    gradient={theme.gradients.card2}
+                >
+                    <ShoppingCart />
+                    <h3>Registrar ações compradas</h3>
+                    <p>Avalie suas ações</p>
                 </HomeButton>
             </ButtonGrid>
         </Container>
